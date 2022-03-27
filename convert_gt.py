@@ -13,6 +13,7 @@ if __name__=='__main__':
     os.mkdir(anno_convert_folder)
     label_convert = {'prohibitory':'0', 'mandatory':'1', 'warning':'2'}
     rf = open(anno_ori_file,'r')
+    broken_img_num = (5408,5529)
     boxes = list()
     last_num  = -1
     for line in tqdm(rf.readlines()):
@@ -20,7 +21,8 @@ if __name__=='__main__':
         if not attr[-1]:
             continue
         num = int(attr[0].split('.')[0])
-        #label = label_convert[attr[-1]]
+        if num in broken_img_num:
+            continue
         label = attr[-1]
         boxes.append([int(float(x)) for x in attr[1:-1]] + [label])
         if num == last_num:
