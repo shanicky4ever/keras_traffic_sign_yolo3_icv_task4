@@ -7,3 +7,6 @@
 *.mp4
 *.DS_Store
 *.bak
+*.h5
+*.pkl
+log_voc

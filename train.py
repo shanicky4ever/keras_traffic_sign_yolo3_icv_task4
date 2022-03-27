@@ -36,7 +36,6 @@ def create_training_instances(
 ):
     # parse annotations of the training set
     train_ints, train_labels = parse_voc_annotation(train_annot_folder, train_image_folder, train_cache, labels)
-    print(train_ints[0])
 
     # parse annotations of the validation set, if any, otherwise split the training set
     if os.path.exists(valid_annot_folder):
@@ -261,7 +260,7 @@ def _main_(args):
         generator        = train_generator, 
         steps_per_epoch  = len(train_generator) * config['train']['train_times'], 
         epochs           = config['train']['nb_epochs'] + config['train']['warmup_epochs'], 
-        verbose          = 2 if config['train']['debug'] else 1,
+        #verbose          = 2 if config['train']['debug'] else 1,
         callbacks        = callbacks, 
         workers          = 4,
         max_queue_size   = 8

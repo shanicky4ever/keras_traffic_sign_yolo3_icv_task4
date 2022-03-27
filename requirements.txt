@@ -16,7 +16,7 @@ PyYAML==5.3
 scipy==1.4.1
 six==1.14.0
 tensorboard
-tensorflow
+tensorflow-gpu==1.14
 tensorflow-estimator
 termcolor==1.1.0
 tqdm==4.41.1
