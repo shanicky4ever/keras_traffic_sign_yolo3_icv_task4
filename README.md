@@ -1,8 +1,14 @@
 # Training Step
 
-1. pull CCTSDB dataset from https://github.com/csust7zhangjm/CCTSDB.git
 
-2. run `python convert_gt.py` to convert data annotion
+
+~~1. pull CCTSDB dataset from https://github.com/csust7zhangjm/CCTSDB.git~~
+
+~~2. run `python convert_gt.py` to convert data annotion~~
+
+1. Use [task4 train dataset](https://drive.google.com/file/d/1aJVd6qF58zzSKUMf8teG2ZYRPo2zbxJq/view?usp=sharing)
+
+2. `python convert_task4_label.py --root {$TASK4_TRAIN_DATASET}`) to convert annotation file
 
 3. `pip install -r requirements.txt`
 
