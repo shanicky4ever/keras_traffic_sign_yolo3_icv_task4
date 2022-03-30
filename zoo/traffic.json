@@ -7,9 +7,9 @@
     },
 
     "train": {
-        "train_image_folder":   "/home/shanicky/code/icv_challange/CCTSDB",
-        "train_annot_folder":     "/home/shanicky/code/icv_challange/CCTSDB_anno",    
-        "cache_name":           "traffic_train.pkl", 
+        "train_image_folder":   "/home/shanicky/code/icv_challange/task4_train",
+        "train_annot_folder":     "/home/shanicky/code/icv_challange/task4_train/labels_xml",    
+        "cache_name":           "icv4_traffic_train.pkl", 
           
         "train_times":          1,
         "batch_size":           6,
@@ -26,7 +26,7 @@
         "class_scale":          1,
 
         "tensorboard_dir":      "log_voc",
-        "saved_weights_name":   "voc.h5",
+        "saved_weights_name":   "icv4_voc.h5",
         "debug":                false
     },
 
